@@ -1,229 +1,55 @@
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+  --vino: #742d48;
+  --vino-oscuro: #4b1f32;
+  --rosado: #f8e9ee;
+  --crema: #fff9df;
+  --texto: #352c31;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background-color: #f4f6f8;
-}
-
-.contenedor {
-    width: 90%;
-    max-width: 1050px;
-    margin: auto;
-}
-
-header {
-    background-color: #1f2937;
-    color: white;
-    padding: 25px 0;
-}
-
-header .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-header h1 {
-    font-size: 28px;
-}
-
-header p {
-    color: #d1d5db;
-    margin-top: 3px;
-}
-
-nav {
-    display: flex;
-    gap: 22px;
-}
-
-nav a {
-    color: rgb(6, 0, 83);
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #60a5fa;
-}
-
-section {
-    padding: 70px 0;
-}
-
-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #1f2937;
-}
-
-.presentacion {
-    background-color: white;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.presentacion h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.presentacion p {
-    max-width: 700px;
-    margin: auto;
-    color: #555;
-    font-size: 18px;
-}
-
-#sobre-mi {
-    background-color: #f4f6f8;
-}
-
-#sobre-mi p {
-    max-width: 800px;
-    color: #555;
-}
-
-.experiencia {
-    background-color: white;
-    padding: 30px;
-    border-left: 5px solid #3b82f6;
-    border-radius: 8px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-}
-
-.experiencia h3 {
-    font-size: 21px;
-    margin-bottom: 4px;
-}
-
-.experiencia h4 {
-    color: #3b82f6;
-    margin-bottom: 12px;
-}
-
-.experiencia p {
-    color: #555;
-}
-
-
-#proyectos {
-    background-color: white;
-}
-
-.proyectos {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.tarjeta {
-    background-color: white;
-    width: calc(50% - 15px);
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-}
-
-.tarjeta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    display: block;
-}
-
-.contenido-tarjeta {
-    padding: 25px;
-}
-
-.contenido-tarjeta h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #1f2937;
-}
-
-.contenido-tarjeta p {
-    color: #555;
-    margin-bottom: 22px;
-}
-
-
-.boton {
-    display: inline-block;
-    background-color: #3b82f6;
-    color: rgb(6, 5, 104);
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.boton:hover {
-    background-color: #2563eb;
-}
-
-footer {
-    background-color: #1f2937;
-    color: #d1d5db;
-    text-align: center;
-    padding: 25px 0;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-
-@media (max-width: 700px) {
-
-    header .contenedor {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .presentacion {
-        padding: 70px 0;
-    }
-
-    .presentacion h2 {
-        font-size: 32px;
-    }
-
-    .proyectos {
-        flex-direction: column;
-    }
-
-    .tarjeta {
-        width: 100%;
-    }
-
-    section {
-        padding: 50px 0;
-    }
-}
+html { scroll-behavior: smooth; }
+body { background: #fffaf8; color: var(--texto); font-family: 'Trebuchet MS', Arial, sans-serif; }
+h1, h2, h3, .marca { font-family: Georgia, 'Times New Roman', serif; }
+a { text-decoration: none; }
+.barra { background: var(--vino-oscuro); }
+.marca { color: var(--crema); font-weight: bold; font-size: 26px; letter-spacing: 1px; }
+.marca:hover { color: white; }
+.navbar .nav-link { color: #f8e9ee; margin-left: 14px; }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: var(--crema); }
+.navbar-toggler { border-color: #fff9df; }
+.navbar-toggler-icon { filter: brightness(0) invert(1); }
+.portada { background: var(--vino-oscuro); color: white; padding: 100px 0 90px; }
+.portada .detalle { color: var(--crema); text-transform: uppercase; letter-spacing: 3px; font-size: 12px; }
+.portada h1 { font-size: clamp(40px, 7vw, 76px); line-height: 1.08; }
+.portada h1 span { color: #f6c4d2; }
+.portada p { color: #f6dfe8; max-width: 550px; line-height: 1.8; }
+.palabra { color: var(--crema); font-family: Georgia, serif; font-style: italic; }
+.btn-vino { background: var(--vino); color: white; border: 1px solid var(--vino); }
+.btn-vino:hover { background: var(--vino-oscuro); color: white; border-color: var(--vino-oscuro); }
+.btn-crema { background: var(--crema); color: var(--vino-oscuro); border: 1px solid var(--crema); }
+.btn-crema:hover { background: white; color: var(--vino-oscuro); }
+.btn-borde { border: 1px solid var(--vino); color: var(--vino); }
+.btn-borde:hover { background: var(--vino); color: white; }
+.btn { border-radius: 25px; padding: 9px 21px; font-weight: bold; }
+.seccion { padding: 75px 0; }
+.titulo { color: var(--vino-oscuro); font-size: 38px; }
+.subtitulo { color: #705a63; }
+.sobre-mi { background: white; }
+.etiqueta { display: inline-block; background: var(--crema); color: var(--vino-oscuro); border: 1px solid #f1e6b9; border-radius: 25px; padding: 6px 13px; font-size: 13px; margin: 3px; }
+.tarjeta { background: white; border: 1px solid #eedce2; border-radius: 16px; overflow: hidden; height: 100%; transition: transform .25s, box-shadow .25s; }
+.tarjeta:hover { transform: translateY(-6px); box-shadow: 0 12px 25px #742d4822; }
+.tarjeta .contenido { padding: 25px; }
+.tarjeta h3 { color: var(--vino-oscuro); font-size: 26px; }
+.tarjeta p { color: #6f5b64; line-height: 1.7; }
+.categoria-icono { background: var(--rosado); color: var(--vino); height: 170px; display: flex; align-items: center; justify-content: center; font-size: 75px; font-family: Georgia, serif; }
+.categoria-icono.crema { background: var(--crema); }
+.categoria-icono.vino { background: var(--vino); color: var(--crema); }
+.proyecto-img { width: 100%; height: 195px; object-fit: cover; background: var(--rosado); }
+.proyecto-espacio { display: flex; justify-content: center; align-items: center; width: 100%; height: 195px; background: var(--rosado); color: var(--vino); text-align: center; padding: 20px; }
+.proyecto-espacio span { font-size: 14px; }
+.mini-titulo { font-size: 23px !important; }
+.ruta { font-size: 14px; color: #8c6a79; }
+.ruta a { color: var(--vino); }
+.pie { background: var(--vino-oscuro); color: #f5dfe7; padding: 30px 0; }
+.pie a { color: var(--crema); }
+.aviso { background: var(--crema); border-radius: 12px; padding: 18px; color: var(--vino-oscuro); }
+@media (max-width: 768px) { .portada { padding: 65px 0; } .seccion { padding: 50px 0; } .titulo { font-size: 32px; } }

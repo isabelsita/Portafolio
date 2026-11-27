@@ -1,148 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Isabel</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi portafolio | Isa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="contenedor">
-            <h1>Isabel</h1>
-            <p>Estudiante de Ingeniería de Software</p>
-
-            <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#proyectos">Proyectos</a>
-            </nav>
-        </div>
-    </header>
-
-
-    <main>
-    
-        <section id="inicio" class="presentacion">
-            <div class="contenedor">
-                <h2>Hola, soy Isabel</h2>
-
-                <p>
-                    Futura desarrolladora de software interesada en aprender,
-                    crear proyectos y seguir creciendo en el mundo de la programación.
-                </p>
-            </div>
-        </section>
-
-
-        <!-- SOBRE MÍ -->
-        <section id="sobre-mi">
-            <div class="contenedor">
-                <h2>Acerca de mí</h2>
-
-                <p>
-                    Esta presentación es ficticia y fue creada con fines académicos.
-                    Soy una estudiante de Ingeniería de Software interesada en el
-                    desarrollo web y en aprender nuevas tecnologías. Me gusta
-                    practicar programación, leer y seguir mejorando mis habilidades
-                    para convertirme en una buena desarrolladora de software.
-                </p>
-            </div>
-        </section>
-     
-        <section id="experiencia">
-            <div class="contenedor">
-                <h2>Experiencia profesional</h2>
-
-                <article class="experiencia">
-                    <h3>Desarrolladora Junior</h3>
-
-                    <h4>Tech Solutions</h4>
-
-                    <p><strong>Período:</strong> 2028 - 2030</p>
-
-                    <p>
-                        <strong>Experiencia simulada para actividad académica.</strong>
-                        Participé en el desarrollo y mantenimiento de páginas web,
-                        colaboré con otros desarrolladores y apoyé la creación de
-                        soluciones digitales para diferentes proyectos.
-                    </p>
-                </article>
-            </div>
-        </section>
-        
-        <section id="proyectos">
-            <div class="contenedor">
-
-                <h2>Mis proyectos</h2>
-
-                <div class="proyectos">
-
-                    <article class="tarjeta">
-
-                        <img 
-                            src="imagenes/hoja-de-vida.png" 
-                            alt="Captura de pantalla del proyecto Hoja de vida"
-                        >
-
-                        <div class="contenido-tarjeta">
-
-                            <h3>Hoja de vida</h3>
-
-                            <p>
-                                Proyecto desarrollado en clase utilizando HTML y CSS.
-                                En este proyecto practiqué la creación de una página
-                                web organizada para presentar información personal,
-                                académica y profesional.
-                            </p>
-
-                            <a 
-                                href="https://isabelsita.github.io/hoja_de-vida/"
-                                target="_blank"
-                                class="boton"
-                            >
-                                Ver en vivo
-                            </a>
-
-                        </div>
-
-                    </article>
-                   
-                    <article class="tarjeta">
-
-                        <img 
-                            src="imagenes/conferencistas.png" 
-                            alt="Captura de pantalla del proyecto Sección de Conferencistas"
-                        >
-
-                        <div class="contenido-tarjeta">
-
-                            <h3>Sección de Conferencistas</h3>
-
-                            <p>
-                                Proyecto desarrollado en clase para practicar HTML
-                                y CSS. Creé una sección para presentar conferencistas
-                                mediante tarjetas, imágenes y diferentes elementos
-                                visuales organizados en una página web.
-                            </p>
-
-                            <a 
-                                href="https://isabelsita.github.io/Eventos/"
-                                target="_blank"
-                                class="boton"
-                            >
-                                Ver en vivo
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-</body>
-</html>
+<nav class="navbar navbar-expand-lg barra navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand marca" href="#inicio">isa<span style="color: #f6c4d2;">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu"><div class="navbar-nav">
+      <a class="nav-link" href="#inicio">Inicio</a>
+      <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+      <a class="nav-link" href="#proyectos">Proyectos</a>
+      <a class="nav-link" href="https://github.com/isabelsita" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div></div>
+  </div>
+</nav>
+<header id="inicio" class="portada"><div class="container"><div class="row align-items-center"><div class="col-lg-9">
+<p class="detalle mb-3">Mi espacio para crear y aprender</p>
+<h1>Hola, soy <span>Isa.</span><br><span class="palabra">Desarrollo ideas</span> con código.</h1>
+<p class="mt-4">Estudio Ingeniería de Software y me gusta aprender creando. En este portafolio comparto mis proyectos de algoritmia, inteligencia artificial y desarrollo de software.</p>
+<a href="#proyectos" class="btn btn-crema mt-3">Explorar proyectos ↓</a>
+<a href="https://github.com/isabelsita" class="btn btn-outline-light mt-3 ms-2" target="_blank" rel="noopener noreferrer">Mi GitHub ↗</a>
+</div></div></div></header>
+<main>
+<section id="sobre-mi" class="seccion sobre-mi"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-7">
+<p class="detalle" style="color: #742d48; letter-spacing: 2px;">UN POQUITO SOBRE MÍ</p>
+<h2 class="titulo">Aprendiendo, creando y creciendo.</h2>
+<p class="subtitulo mt-3">Soy Isabel, estudiante de Ingeniería de Software y aprendiz de desarrollo. Disfruto transformar lo que aprendo en proyectos reales, resolver problemas y trabajar en equipo.</p>
+</div><div class="col-lg-5"><div class="aviso"><strong>Mis herramientas</strong><div class="mt-2"><span class="etiqueta">HTML</span><span class="etiqueta">CSS</span><span class="etiqueta">Bootstrap</span><span class="etiqueta">JavaScript</span><span class="etiqueta">Python</span><span class="etiqueta">C#</span><span class="etiqueta">Git y GitHub</span><span class="etiqueta">Postman</span></div></div></div></div></div></section>
+<section id="proyectos" class="seccion"><div class="container"><div class="text-center mb-5"><p class="ruta mb-2">MI TRABAJO</p><h2 class="titulo">Explora mis proyectos</h2><p class="subtitulo">Tres áreas, muchas cosas por aprender.</p></div><div class="row g-4">
+<div class="col-md-4"><article class="tarjeta"><div class="categoria-icono">{ }</div><div class="contenido"><h3>Algoritmia</h3><p>Ejercicios de lógica, estructuras de datos y solución de problemas.</p><a class="btn btn-vino" href="paginas/algoritmia.html">Explorar →</a></div></article></div>
+<div class="col-md-4"><article class="tarjeta"><div class="categoria-icono crema">✦</div><div class="contenido"><h3>Inteligencia artificial</h3><p>Un espacio para los proyectos y experimentos de IA que vienen.</p><a class="btn btn-vino" href="paginas/ia.html">Explorar →</a></div></article></div>
+<div class="col-md-4"><article class="tarjeta"><div class="categoria-icono vino">&lt;/&gt;</div><div class="contenido"><h3>Desarrollo de software</h3><p>Páginas web, JavaScript, herramientas y proyectos de equipo.</p><a class="btn btn-vino" href="paginas/software.html">Explorar →</a></div></article></div>
+</div></div></section></main>
+<footer class="pie"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>Hecho con ♥ por Isa · 2026</span><a href="https://github.com/isabelsita" target="_blank" rel="noopener noreferrer">Mi GitHub ↗</a></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
